@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane fx:id="rootAnchorPane" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.controllers.AjoutInvestissementController">
+    <children>
+        <Label layoutX="14.0" layoutY="14.0" text="Ajouter un investissement" />
+        <HBox layoutX="14.0" layoutY="44.0" spacing="10">
+            <children>
+                <Label text="ID :" />
+                <TextField fx:id="idTextField" />
+            </children>
+        </HBox>
+        <HBox layoutX="14.0" layoutY="80.0" spacing="10">
+            <children>
+                <Label text="Nom :" />
+                <TextField fx:id="nomTextField" />
+            </children>
+        </HBox>
+        <HBox layoutX="14.0" layoutY="116.0" spacing="10">
+            <children>
+                <Label text="Montant :" />
+                <TextField fx:id="montantTextField" />
+            </children>
+        </HBox>
+        <HBox layoutX="14.0" layoutY="152.0" spacing="10">
+            <children>
+                <Label text="Description :" />
+                <TextField fx:id="descriptionTextField" />
+            </children>
+        </HBox>
+        <Button layoutX="14.0" layoutY="200.0" mnemonicParsing="false" onAction="#ajouterInvestissement" text="Ajouter" />
+    </children>
+</AnchorPane>
